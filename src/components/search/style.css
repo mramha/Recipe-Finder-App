@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@800&display=swap");
+.container {
+  background: rgb(216, 69, 107);
+  background: radial-gradient(
+    circle,
+    rgba(216, 69, 107, 1) 7%,
+    rgba(231, 106, 138, 0.938813025210084) 94%
+  );
+  height: 140px;
+  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2), 0 24px 40px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif;
+}
+
+.form-label {
+  color: white;
+}
