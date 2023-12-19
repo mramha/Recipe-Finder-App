@@ -13,27 +13,26 @@ const Search = ({ onIngredientsChange }) => {
 
   return (
     <div className="container">
-      <div className=" justify-content-center align-items-center flex-column">
-        <h3 className="form-label mt-1" htmlFor="form">
-          Let's Cook 🍽
-        </h3>
-        <div className="input-group mt-2 ">
-          <input
-            type="search"
-            id="search-bar"
-            placeholder="Enter your ingredients..."
-            className="form-control "
-            value={selectedIngredients}
-            onChange={handleInputChange}
-          />
-          <div className="input-group-append">
-            <button
-              className="btn btn-primary"
-              type="button"
-              onClick={displayRecipes}
-            >
-              <box-icon name="search-alt" color="#ffffff"></box-icon>{" "}
-            </button>
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <div className="input-group mt-5">
+            <input
+              type="search"
+              id="search-bar"
+              placeholder="Enter your ingredients..."
+              className="form-control"
+              value={selectedIngredients}
+              onChange={handleInputChange}
+            />
+            <div className="input-group-append">
+              <button
+                className="btn btn-primary"
+                type="button"
+                onClick={displayRecipes}
+              >
+                <box-icon name="search-alt" color="#ffffff"></box-icon>{" "}
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -1,35 +1,23 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 
-const Recipe = (props) => {
+const Recipe = ({ name, photoName, addToFavorites }) => {
   return (
-    <div className="col mb-4">
-      <div className="card h-100">
-        <img
-          src={props.photoName}
-          className="card-img-top img-fluid card-img-custom"
-          alt={props.name}
-          style={{ height: "200px", objectFit: "cover" }}
-        />
-        <div className="card-body">
-          <div className="card-content custom-card-content">
-            <div className="container">
-              <div className="row">
-                <div className="col">
-                  <h5 className="card-title">{props.name}</h5>
-                </div>
-                <div className="col-auto">
-                  <button className="btn">
-                    <box-icon name="heart"></box-icon>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <p className="card-text">{props.description}</p>
-          </div>
-          <div className="flex-grow-5"></div>
-        </div>
+    <div className="card" style={{ width: "18rem" }}>
+      <img src={photoName} className="card-img-top" alt={name} />
+      <div className="card-body">
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text">
+          {/* Add some additional information about the recipe here */}
+        </p>
+        <button className="btn btn-outline-dark mr-2" onClick={addToFavorites}>
+          <box-icon
+            name="heart-circle"
+            type="solid"
+            size="md"
+            color="black"
+          ></box-icon>{" "}
+        </button>
+        <button className="btn btn-outline-dark">Read More</button>
       </div>
     </div>
   );
