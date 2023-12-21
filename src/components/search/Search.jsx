@@ -13,9 +13,9 @@ const Search = ({ onIngredientsChange }) => {
 
   return (
     <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-md-6">
-          <div className="input-group mt-5">
+      <div className="row justify-content-center align-items-center">
+        <div className="col-6">
+          <div className="input-group mt-4">
             <input
               type="search"
               id="search-bar"
@@ -26,7 +26,7 @@ const Search = ({ onIngredientsChange }) => {
             />
             <div className="input-group-append">
               <button
-                className="btn btn-primary"
+                className="btn btn-success"
                 type="button"
                 onClick={displayRecipes}
               >
