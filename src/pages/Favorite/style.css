@@ -1,0 +1,52 @@
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 360px;
+  height: 100vh; /* Set a fixed height for the cart */
+  overflow-y: auto; /* Add vertical scroll if the content overflows */
+  padding: 20px;
+  background: white;
+  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  transition: 0.5s;
+  scale: auto;
+  z-index: 5;
+}
+
+.cart.active {
+  right: 0;
+}
+
+.cart-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.cart-product-title {
+  text-align: left;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 15%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.cart-product-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
