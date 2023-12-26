@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
@@ -78,6 +79,15 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+=======
+import React from "react";
+import RouterApp from "./components/RouterApp"; // Assuming Router is in the same directory
+const App = () => {
+  return (
+    <div>
+      <RouterApp />
+    </div>
+>>>>>>> master
   );
 };
 
