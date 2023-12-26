@@ -1,13 +1,11 @@
-import "./App.css";
-import "./components/search/Search.jsx";
-import Home from "./pages/Home/Home.jsx";
-
-function App() {
+import React from "react";
+import RouterApp from "./components/RouterApp"; // Assuming Router is in the same directory
+const App = () => {
   return (
-    <div className="App">
-      <Home />
+    <div>
+      <RouterApp />
     </div>
   );
-}
+};
 
 export default App;

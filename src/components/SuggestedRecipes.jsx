@@ -1,7 +1,12 @@
 import React from "react";
-import Recipe from "../recipe/Recipe";
+import Recipe from "./Recipe";
 
 const SuggestedRecipes = ({ suggestedRecipes, addToFavorites }) => {
+  const handleAddToFavorites = (recipe) => {
+    addToFavorites(recipe);
+    window.alert(`Added "${recipe.title}" to favorites!`);
+  };
+
   return (
     <div>
       {suggestedRecipes && suggestedRecipes.length > 0 && (
@@ -13,7 +18,8 @@ const SuggestedRecipes = ({ suggestedRecipes, addToFavorites }) => {
                 <Recipe
                   name={recipe.title}
                   photoName={recipe.image}
-                  addToFavorites={() => addToFavorites(recipe)}
+                  addToFavorites={() => handleAddToFavorites(recipe)}
+                  recipe={recipe}
                 />
               </div>
             ))}
