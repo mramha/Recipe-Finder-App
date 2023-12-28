@@ -61,7 +61,6 @@ const Home = () => {
 
   return (
     <div>
-      <Nav />
       <Search onIngredientsChange={handleIngredientsChange} />
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}

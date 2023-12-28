@@ -1,9 +1,14 @@
 import React from "react";
-import RouterApp from "./components/RouterApp"; // Assuming Router is in the same directory
+import { BrowserRouter } from "react-router-dom";
+import Nav from "./components/Nav";
+import RouterApp from "./components/RouterApp";
 const App = () => {
   return (
     <div>
-      <RouterApp />
+      <BrowserRouter>
+        <Nav />
+        <RouterApp />
+      </BrowserRouter>
     </div>
   );
 };

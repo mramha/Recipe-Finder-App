@@ -17,7 +17,7 @@ const Recipe = ({ name, photoName, addToFavorites, recipe }) => {
         >
           Add To Favorites
         </a>
-        <Link to={`/recipe/${recipe.id}`} className="btn">
+        <Link to={`/recipe/${recipe?.id}`} className="btn">
           More...
         </Link>
       </div>
