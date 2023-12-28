@@ -13,13 +13,8 @@ const Search = ({ onIngredientsChange }) => {
 
   return (
     <div className="container">
-<<<<<<< HEAD:src/components/search/Search.jsx
       <div className="row justify-content-center align-items-center">
         <div className="col-6">
-=======
-      <div className="row justify-content-center">
-        <div className="col-md-6">
->>>>>>> master:src/components/Search.jsx
           <div className="input-group mt-4">
             <input
               type="search"
@@ -31,11 +26,7 @@ const Search = ({ onIngredientsChange }) => {
             />
             <div className="input-group-append">
               <button
-<<<<<<< HEAD:src/components/search/Search.jsx
-                className="btn btn-success"
-=======
                 className="btn btn-danger"
->>>>>>> master:src/components/Search.jsx
                 type="button"
                 onClick={displayRecipes}
               >

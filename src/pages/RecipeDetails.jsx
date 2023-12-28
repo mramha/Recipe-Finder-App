@@ -14,24 +14,15 @@ const RecipeDetails = () => {
       `https://api.spoonacular.com/recipes/${params.id}/information?apiKey=${apiKey}`
     );
     const data = await resp.json();
-    return data;
+    setDetails(data);
   };
 
   useEffect(() => {
-    let isMounted = true;
-
-    fetchDetails().then((data) => {
-      if (isMounted) setDetails(data);
-    });
-
-    return () => {
-      isMounted = false;
-    };
+    fetchDetails();
   }, [params.id]);
 
   return (
     <div>
-      <Nav />
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">

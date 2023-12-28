@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-// Home.jsx
-import React from "react";
-import Search from "../components/search/Search";
-import SuggestedRecipes from "../components/suggestedRecipes/SuggestedRecipes";
-
-const Home = ({
-  selectedIngredients,
-  suggestedRecipes,
-  handleIngredientsChange,
-  addToFavorites,
-}) => {
-  return (
-    <div>
-      <Search onIngredientsChange={handleIngredientsChange} />
-=======
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Search from "../components/Search";
@@ -77,11 +61,9 @@ const Home = () => {
 
   return (
     <div>
-      <Nav />
       <Search onIngredientsChange={handleIngredientsChange} />
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
->>>>>>> master
       <SuggestedRecipes
         suggestedRecipes={suggestedRecipes}
         addToFavorites={addToFavorites}
