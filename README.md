@@ -5,6 +5,13 @@
 
 - The Recipe Finder App is a React-based web application that allows users to search for recipes based on ingredients, view detailed information about specific recipes, and manage a list of favorite recipes. The application leverages the Spoonacular API to fetch recipe data.
 
+### Technologies and Languages Used:
+
+- Programming Languages => JavaScript.
+- Libraries and Frameworks => React, React Router, Axios.
+- API => Spoonacular API
+- Markup and Styling => HTML, CSS, Bootstrap.
+
 
 ### Features:
 
@@ -28,6 +35,9 @@
 3. Install Dependencies: Install the necessary dependencies using npm.
 4. Set Up Environment Variables: Create a .env file in the root of the project and add your Spoonacular API key.
 5. Run the App: Start the development server.
+
+
+
 
 
 
