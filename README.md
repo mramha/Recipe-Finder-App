@@ -21,3 +21,14 @@
 - Home Component: The landing page where users can search for recipes by ingredients and view suggested recipes.
 - RecipeDetails Component: Displays detailed information about a selected recipe, including ingredients and instructions.
 - Favorite Component: Displays a list of the user's favorite recipes.
+
+### Installation Steps:
+1- Clone the Repository: Clone the project repository to your local machine using Git.
+2-Navigate to the Project Directory: Move into the project directory.
+3-Install Dependencies: Install the necessary dependencies using npm.
+4-Set Up Environment Variables: Create a .env file in the root of the project and add your Spoonacular API key.
+5-Run the App: Start the development server.
+
+
+
+
